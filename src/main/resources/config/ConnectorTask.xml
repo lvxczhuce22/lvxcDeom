@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:root xmlns:tns="www.hisense.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="www.hisense.com com/hisense/util/xmlconfig/config.xsd ">
+	<group name="connector">
+
+		<!-- 设备状态汇总上报协议1.0 监听MQ地址、Topic及解析类配置 -->
+		<config
+			serverStr="failover:(nio://127.0.0.1:61616,nio://127.0.0.1:61616)?randomize=false&amp;timeout=30000&amp;maxReconnectDelay=30000"
+			password="admin" user="admin" identity="ITSOM.HISENSE.EQUIPSTATUS"
+			factoryName="hisense.fdp.cfa.service.msghandler.impl.EquipStatusMsgHandlerImpl"
+			fromEncode="UTF-8" toEncode="UTF-8" toTopic="empty" connectType="MQ"
+			role="business" priority="5" />
+	</group>
+</tns:root>
