@@ -69,9 +69,9 @@ public class VariableInit {
 		ADAPTER_NAME = ADAPTER_NAME + "@" + getLocalIP();// 配置文件ADAPTER_NAME@适配器所在服务器IP
 		log.info("[适配器名称]" + ADAPTER_NAME + " (配置文件ADAPTER_NAME@适配器所在服务器IP)");
 		
-		MQ_MAINTAININF_TOPIC = this.getPropertyValue("MQ_MAINTAININF_TOPIC");
-		MQ_HEART_BEAT_TOPIC = this.getPropertyValue("MQ_HEART_BEAT_TOPIC");
-		MSG_HANDLER_POOL_SIZE = this.getPropertyValue("MSG_HANDLER_POOL_SIZE");
+//		MQ_MAINTAININF_TOPIC = this.getPropertyValue("MQ_MAINTAININF_TOPIC");
+//		MQ_HEART_BEAT_TOPIC = this.getPropertyValue("MQ_HEART_BEAT_TOPIC");
+//		MSG_HANDLER_POOL_SIZE = this.getPropertyValue("MSG_HANDLER_POOL_SIZE");
 		
 		REPEAT_COUNT_MAX = Integer.valueOf(this.getPropertyValue("REPEAT_COUNT_MAX"));
 		NODE_TREE_INTERVAL = this.getPropertyValue("NODE_TREE_INTERVAL");
